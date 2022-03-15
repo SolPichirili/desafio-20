@@ -12,7 +12,7 @@ export class ProductsService {
         return this.products;
     }
 
-    update(id: number, product: Product) {
+    update(id: number, product: object) {
         const element = this.products.find(e => e.id === id);
         const indexOfElement = this.products.findIndex(e => e.id === id);
         const updatedList = {
